@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
       // ),
 
 
-      //lecture 3
+      //lecture3
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
