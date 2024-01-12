@@ -3,8 +3,9 @@ import 'package:flutter/services.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: Colors.redAccent,));
-      runApp(const MyApp());
+    statusBarColor: Colors.redAccent,
+  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -51,14 +52,45 @@ class MyApp extends StatelessWidget {
 
       home: SafeArea(
         child: Scaffold(
-          appBar: AppBar(backgroundColor: Colors.redAccent,toolbarHeight: 70,
+          appBar: AppBar(
+            backgroundColor: Colors.redAccent, toolbarHeight: 70,
+
             // leading:const Icon(Icons.menu, color: Colors.white,),
-            title:const Text('My RNW',
-              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),),
-            centerTitle: true,),
-          body: const Center(child: Text.rich(TextSpan(children: [TextSpan(text: "Red & White")])),),
+            title: const Text(
+              'My RNW',
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            ),
+            centerTitle: true,
+          ),
+          body: const Center(
+            child: Text.rich(TextSpan(children: [
+              TextSpan(
+                  text: "Red & White\n",
+                  style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 70,
+                      color: Colors.redAccent,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.redAccent)),
+              TextSpan(
+                  text: '     Multimedia Education\n',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 30,
+                    color: Colors.redAccent,
+                  )),
+              TextSpan(
+                  text: '   Shaping "Skills" for "Scaling" Higher...!!!',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    color: Colors.redAccent,
+                  ))
+            ])),
+          ),
         ),
       ),
-     );
+    );
   }
 }
