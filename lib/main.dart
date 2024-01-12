@@ -50,6 +50,8 @@ class MyApp extends StatelessWidget {
       //   ),
       // ),
 
+
+      //lecture 3
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
