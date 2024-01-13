@@ -200,7 +200,7 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.amber,
                         fontSize: 30,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                         letterSpacing: 5)),
                 TextSpan(
                     text: "E",
